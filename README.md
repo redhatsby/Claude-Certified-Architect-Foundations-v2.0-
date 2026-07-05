@@ -28,8 +28,8 @@ Asking one synthesis agent to review everything with stronger wording leaves the
 
 For more on decomposing agent workflows and tool-mediated orchestration, see the Agent SDK documentation and the broader Prompt Engineering guidance.
 
-Domain
-Agentic Architecture & Orchestration
+Domain :Agentic Architecture & Orchestration
+
 Question 2
 Correct
 Scenario: Multi-Agent Research System You are building a multi-agent research system using the Claude Agent SDK. A coordinator agent delegates to specialized subagents: one searches the web, one analyzes documents, one synthesizes findings, and one generates reports. The system researches topics and produces comprehensive, cited reports. During testing, the document analysis subagent receives coordinator-selected PDFs and reports from an approved catalog, but it has a generic URL retrieval tool. It sometimes follows links inside documents to blogs, login pages, or duplicate HTML summaries, then cites those pages instead of the approved sources. You need reduce these citation and scope errors while preserving access to approved source material. What change best addresses this?
@@ -55,8 +55,8 @@ Prompt warnings are weaker because they depend on probabilistic compliance while
 
 For further study, see Tool Use, MCP Tools, and Agent SDK.
 
-Domain
-Tool Design & MCP Integration
+Domain:Tool Design & MCP Integration
+
 Question 3
 Incorrect
 Scenario: Developer Productivity with Claude You are building developer productivity tools using the Claude Agent SDK. The agent helps engineers explore unfamiliar codebases, understand legacy systems, generate boilerplate code, and automate repetitive tasks. It uses built-in tools (Read, Write, Bash, Grep, Glob) and integrates with MCP servers. An engineer asks the agent to add a caching layer around a legacy authorization module. The codebase has multiple tenants, audit logging, and inconsistent invalidation behavior, and the team has little domain knowledge. Past attempts produced working code that later failed on stale permissions and compliance edge cases. What should the engineer do before asking Claude to modify files?
